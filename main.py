@@ -5,11 +5,7 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 import streamlit as st
-import time 
-from PIL import Image, ImageOps
-from tensorflow import keras
-from keras.models import model_from_json
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
+
 
 face_cascade = cv2.CascadeClassifier(r'F:\Vikas\realtimefaceemotionrecognition\haarcascade_frontalface_default.xml')
 classifier =load_model(r'F:\Vikas\realtimefaceemotionrecognition\model.h5')
